@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Visitor;
 
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\CLIRequest;
