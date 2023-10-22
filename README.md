@@ -12,7 +12,7 @@ The user guide corresponding to the latest version of the framework can be found
 
 ## And why this repository exists? starter? Multirole? what does it mean?
 
-This repository is a fork of the official repository of CodeIgniter 4, but with some changes, such as:
+This repository is a clone of the official repository of CodeIgniter 4.4.2, but with some changes, such as:
 
 - UI Template using Mazer Admin Template - [Check Here](https://github.com/zuramai/mazer)
 - User Authentication System
@@ -21,13 +21,15 @@ This repository is a fork of the official repository of CodeIgniter 4, but with 
 - Menu access based on role
 - User Management System
 
+Why? because it will speed up your development time, no need to think about the things above, just focus on your business logic.
+
 ## Installation & Setup
 
 - Clone this repository
 - Setup env, only need :
-- - `CI_ENVIRONMENT` to `development`
-- - `app.baseURL` to your base url, mine is `http://localhost:8080`
-- - `database.default` to your database configuration
+  - `CI_ENVIRONMENT` to `development`
+  - `app.baseURL` to your base url, mine is `http://localhost:8080`
+  - `database.default` to your database configuration
 - Run `composer install`
 - Run `php spark migrate` and `php spark db:seed SeedAll`
 - Run `php spark serve` to run the application
