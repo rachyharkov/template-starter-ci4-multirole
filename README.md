@@ -23,6 +23,10 @@ This repository is a clone of the official repository of CodeIgniter 4.4.2, but 
 
 Why? because it will speed up your development time, no need to think about the things above, just focus on your business logic.
 
+## Prerequisites
+
+- Datatable Server Side - [check here](https://codeigniter4-datatables.hermawan.dev/)
+
 ## Installation & Setup
 
 - Clone this repository
