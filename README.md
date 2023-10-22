@@ -6,51 +6,45 @@ CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and 
 More information can be found at the [official site](https://codeigniter.com).
 
 This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
 
 The user guide corresponding to the latest version of the framework can be found
 [here](https://codeigniter4.github.io/userguide/).
 
-## Installation & updates
+## And why this repository exists? starter? Multirole? what does it mean?
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+This repository is a fork of the official repository of CodeIgniter 4, but with some changes, such as:
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+- UI Template using Mazer Admin Template - [Check Here](https://github.com/zuramai/mazer)
+- User Authentication System
+- Visitor and Admin Splitted Code for easy maintainability (For those who want to make a website with visitor access and admin access)
+- Multirole System
+- Menu access based on role
+- User Management System
 
-## Setup
+## Installation & Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+- Clone this repository
+- Setup env, only need :
+- - `CI_ENVIRONMENT` to `development`
+- - `app.baseURL` to your base url, mine is `http://localhost:8080`
+- - `database.default` to your database configuration
+- Run `composer install`
+- Run `php spark migrate` and `php spark db:seed SeedAll`
+- Run `php spark serve` to run the application
+- Open `http://localhost:8080` in your browser
 
-## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Important
 
 **Please** read the user guide for a better explanation of how CI4 works!
 
 ## Repository Management
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages and FEATURE REQUESTS.
 
 ## Server Requirements
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+PHP version 8.1 or higher is required, with the following extensions installed:
 
 - [intl](http://php.net/manual/en/intl.requirements.php)
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
