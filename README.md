@@ -15,11 +15,12 @@ The user guide corresponding to the latest version of the framework can be found
 This repository is a clone of the official repository of CodeIgniter 4.4.2, but with some changes, such as:
 
 - UI Template using Mazer Admin Template - [Check Here](https://github.com/zuramai/mazer)
-- User Authentication System
+- Authentication
 - Visitor and Admin Splitted Code for easy maintainability (For those who want to make a website with visitor access and admin access)
 - Multirole System
-- Menu access based on role
-- User Management System
+- Menu Permission
+- User Management
+- Using MySQL as main database
 
 Why? because it will speed up your development time, no need to think about the things above, just focus on your business logic.
 
